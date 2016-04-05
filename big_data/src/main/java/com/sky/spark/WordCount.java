@@ -18,6 +18,7 @@ public class WordCount {
 	
 	private static final Pattern SPACE = Pattern.compile(" ");
 	
+	@SuppressWarnings({ "serial", "resource" })
 	public static void main(String[] args) {
 		SparkConf sparkConf = new SparkConf().setAppName("JavaWordCount").setMaster("local");
 		JavaSparkContext ctx = new JavaSparkContext(sparkConf);
