@@ -19,6 +19,10 @@ import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapred.TextInputFormat;
 import org.apache.hadoop.mapred.TextOutputFormat;
 
+/** 从网上找的代码统计
+ * @author Sky
+ *
+ */
 public class WordCount {
 	
     /**
