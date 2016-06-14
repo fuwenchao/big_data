@@ -1,4 +1,4 @@
-package com.sky.hadoop;
+package com.sky.hadoop.example;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -19,11 +19,14 @@ import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapred.TextInputFormat;
 import org.apache.hadoop.mapred.TextOutputFormat;
 
-/** 从网上找的代码统计
+/** 代码统计(从网上找到的)
+ * @ClassName: WordCount_Online
+ * @Description: 
  * @author Sky
- *
+ * @date 2016年6月7日 下午2:32:15
+ * @version V1.0
  */
-public class WordCount {
+public class WordCount_Online {
 	
     /**
      * MapReduceBase类:实现了Mapper和Reducer接口的基类（其中的方法只是实现接口，而未作任何事情）
@@ -73,7 +76,7 @@ public class WordCount {
          * JobConf：map/reduce的job配置类，向hadoop框架描述map-reduce执行的工作
          * 构造方法：JobConf()、JobConf(Class exampleClass)、JobConf(Configuration conf)等
          */
-        JobConf conf = new JobConf(WordCount.class);
+        JobConf conf = new JobConf(WordCount_Online.class);
         conf.setJobName("wordcount");           //设置一个用户定义的job名称
         conf.setOutputKeyClass(Text.class);    //为job的输出数据设置Key类
         conf.setOutputValueClass(IntWritable.class);   //为job输出设置value类

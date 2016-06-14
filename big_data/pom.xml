@@ -10,23 +10,43 @@
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spark.version>1.6.1</spark.version>
+		<hadoop.version>1.2.1</hadoop.version>
+		<redis.version>2.4.2</redis.version>
+		<mongodb.version>2.11.1</mongodb.version>
+		<junit.version>4.0</junit.version>
 	</properties>
 	
 	<dependencies>
+		<!-- Spark -->
 		<dependency>
 			<groupId>org.apache.spark</groupId>
 			<artifactId>spark-core_2.10</artifactId>
-			<version>1.6.1</version>
+			<version>${spark.version}</version>
 		</dependency>
+		<!-- Hadoop -->
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-core</artifactId>
-			<version>1.2.1</version>
+			<version>${hadoop.version}</version>
 		</dependency>
+		<!-- Redis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>${redis.version}</version>
+		</dependency>
+		<!-- MongoDB -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>${mongodb.version}</version>
+		</dependency>
+		<!-- Junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

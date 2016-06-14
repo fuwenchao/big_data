@@ -1,4 +1,4 @@
-package com.sky.spark;
+package com.sky.spark.example;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,13 +15,21 @@ import org.apache.spark.api.java.function.PairFunction;
 import scala.Tuple2;
 
 /** 单词统计应用
+ * @ClassName: WordCount
+ * @Description: 
  * @author Sky
- *
+ * @date 2016年6月7日 下午2:31:25
+ * @version V1.0
  */
 public class WordCount {
 	
 	private static final Pattern SPACE = Pattern.compile(" ");
 	
+	/** 测试方法
+	 * @MethodName: main
+	 * @Description: 
+	 * @param args
+	 */
 	@SuppressWarnings({ "serial", "resource" })
 	public static void main(String[] args) {
 		// 创建SparkConf对象来配置你的应用(设置本地开发：setMaster("local"))
